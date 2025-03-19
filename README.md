@@ -106,3 +106,5 @@ The game continues until all fruit pairs are matched! 🍏 The goal is to memori
 # Have you questions? Please write me at:
 
 ## koding@duck.com ☻
+
+# The Game online here: https://kodingaston.github.io/Fruity-Game
