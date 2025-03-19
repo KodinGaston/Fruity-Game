@@ -107,4 +107,4 @@ The game continues until all fruit pairs are matched! 🍏 The goal is to memori
 
 ## koding@duck.com ☻
 
-# The Game online here: https://kodingaston.github.io/Fruity-Game
+### The Game online here: https://kodingaston.github.io/Fruity-Game
