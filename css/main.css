@@ -1,0 +1,85 @@
+
+body{
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.app{
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+.card{
+  height: 150px;
+  width: 150px;
+  border: 1px solid #ccc;
+  transform-style: preserve-3d;
+  transition: .7s;
+}
+
+.sides{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 2em;
+  display: grid;
+  place-items: center;
+  backface-visibility: hidden;
+}
+.front{
+  background-color: rgb(18, 168, 238);
+}
+.back{
+  background-color: rgb(222, 79, 251);
+  transform: rotateY(180deg);
+}
+
+.btn{
+  padding: 1em 1.5em;
+  color: #222;
+  background-color: rgb(240, 240, 14);
+  outline: none;
+  border: none;
+}
+
+.rotate{
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .app {
+      width: 80%;
+  }
+
+  .card {
+      height: 120px;
+      width: 120px;
+  }
+
+  .fruit-piece {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 250px) {
+  .app {
+      width: 85%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+  }
+
+  .card {
+      height: 90px;
+      width: 90px;
+  }
+
+  .fruit-piece {
+      font-size: 1.5rem;
+  }
+}
